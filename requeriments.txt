@@ -1,0 +1,15 @@
+pip
+setuptools
+wheel
+cython
+https://github.com/kivy/buildozer.git
+kivy
+https://github.com/kivymd/KivyMD/archive/master.zip
+materialyoucolor
+materialshapes
+pycairo
+pillow
+exceptiongroup
+asyncgui
+asynckivy
+encodings

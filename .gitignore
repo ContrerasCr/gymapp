@@ -109,3 +109,6 @@ secrets.py
 *.kv
 user_data/
 *.json
+
+*.keystore
+*.keystore
