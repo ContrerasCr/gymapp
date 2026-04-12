@@ -16,7 +16,10 @@ class ScreenTriceps(MDScreen):
         add_item_list(self, lista_widget, self.tipo_ejercicio)
 
     def add_info(self):
+        screen = self.manager.get_screen("add-data")
+        screen.previous_screen = "triceps"
         self.parent.current = "add-data"
+
 
     def edit_data(self, data):
         screen = self.manager.get_screen("edit-data")

@@ -75,3 +75,7 @@ class ScreenAddData(MDScreen):
         self.ids.adddata_textfield_peso.text = ""
         self.ids.adddata_textfield_repeticiones.text = ""
         self.ids.adddata_textfield_series.text = ""
+
+    
+    def return_screen(self):
+        self.parent.current = self.previous_screen

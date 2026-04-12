@@ -16,6 +16,8 @@ class ScreenEspalda(MDScreen):
         add_item_list(self, lista_widget, self.tipo_ejercicio)
     
     def add_info(self):
+        screen = self.manager.get_screen("add-data")
+        screen.previous_screen = "espalda"
         self.parent.current = "add-data"
 
     def edit_data(self, data):

@@ -1,7 +1,8 @@
 import json
 # main.py
 from kivymd.uix.list import MDListItem, MDListItemHeadlineText, MDListItemSupportingText, MDListItemLeadingIcon, MDListItemTrailingIcon
-
+import os
+from kivy.utils import platform
 
 
 default_dict = {
@@ -14,6 +15,10 @@ default_dict = {
 }
 
 def get_data_json(file:str="datos.json"):
+    if not os.path.exists(file):
+         default_data = []
+         with open(file, 'w', encoding='utf-8') as f:
+            json.dump(default_data, f, ensure_ascii=False, indent=2)
     with open(file, "r") as file:
        data = json.load(file)
     return data
