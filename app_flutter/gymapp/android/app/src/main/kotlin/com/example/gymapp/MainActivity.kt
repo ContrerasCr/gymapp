@@ -1,4 +1,4 @@
-package com.example.gymapp
+package dev.myriadlancer.gymapp
 
 import io.flutter.embedding.android.FlutterActivity
 
